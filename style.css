@@ -1,0 +1,760 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(151, 228, 120);
+  background-image: url(./img/stena-8.jpg);
+  color: rgb(238, 235, 245);
+  font-size: 1.2em;
+  text-align: center;  
+  width: 100%;  
+}
+.my_header {
+  background: rgb(45, 12, 105);
+  height: 107px;
+  text-align: center;
+}  
+.parallax {  
+  background-image: url(./img/stena-8.jpg);  
+  height: 100%;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+  font-size: 40px;
+  color: rgb(140, 210, 228);
+  padding-top: 25px;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px 3px rgb(9, 3, 27);
+}
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px rgb(33, 4, 46);
+}
+  /* clock*/
+.transformiki {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+}
+.clock {
+  margin-top: 50px;
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border: 5px dashed black; 
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: red;
+  font-weight: 800;
+  display: flex;
+  position: relative;
+  box-shadow: 3px 3px 1px 1px rgb(224, 214, 219), 6px 6px 1px 1px rgb(71, 6, 37);   
+}    
+.tochka {
+  position: absolute;
+  background-color: blue;
+  width: 8px;
+  height: 8px;
+  border: 2px dashed black;
+  border-radius: 50%;
+  bottom: 73px;
+  right: 71px;
+}
+.dvennnadc {
+  top: 4px;  
+  text-align: center;
+  border: 2px dashed black;    
+  left: 67px;
+  position: absolute;     
+}
+.devjt {
+  left: 8px;
+  top: 60px;
+  border: 2px dashed black;
+  position: absolute;   
+}
+.shest {
+  bottom: 4px;  
+  text-align: center;
+  border: 2px dashed black;    
+  left: 67px;
+  position: absolute;
+}
+.tri {
+  right: 8px;
+  top: 60px;
+  border: 2px dashed black;
+  position: absolute;
+}
+hr {
+  width: 45px;
+  height: 8px;
+  background-color: black;
+  position: absolute;
+  bottom: 73px;
+  right: 75px;
+  transform-origin: left center;
+  animation-name: clock_go;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  transform-origin: right 5px;    
+}  
+.hour_strelka {
+  width: 25px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  bottom: 75px;
+  right: 77px;
+  transform-origin: left center;
+  animation-name: clock_go;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  transform-origin: right 5px;   
+}   
+@keyframes clock_go {
+  100%{
+    transform: rotate(360deg);
+      }
+}
+.zero {
+  display: flex;
+  width: 50%;
+  height: 300px;
+  border: 2 px solid blue;
+  background-color: yellow;  
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  margin: 45px auto; 
+  border: 7px dashed rgb(102, 13, 68); 
+  box-shadow: 10px 10px 1px 1px rgb(224, 214, 219), 15px 15px 1px 1px rgb(71, 6, 37);       
+}
+.one {  
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  transition: 2s ease;
+}
+.one:hover {
+  background:  blue;
+  color: black;
+  font-size: 55px;  
+  text-align: center;
+}
+.tu {   
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  align-self: flex-end;
+  transition: 1s ease;
+}
+.tu:hover{
+  transform: translate(-30px, -30px);
+  background-color: violet;
+}
+.three {   
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  transition: 2s linear;
+}
+.three:hover { 
+  transform: scale(2);
+  border-radius: 50%;
+  background-color: white;
+}
+.four {   
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  align-self: flex-end;
+  transition: 2s ease;
+ }
+.four:hover { 
+  transform: rotate3d(1, 0, 1, 90deg);
+  background: blue;
+}
+.five {   
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to top, red, white, blue);
+  border: 2px solid black;
+  transition: 2s linear;
+}
+.five:hover {
+  transform: rotate(720deg);
+  background: radial-gradient(circle, green, white, blue);  
+}
+.six {   
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  align-self: flex-end;
+  transition: 1s linear;
+}
+.six:hover {
+  transform: matrix(1.2, 1, 0.5, 1.2, -25, 1);
+  background: grey;       
+}
+.seven {   
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  transition: 2s linear;
+  margin-right: 75px;
+}
+.seven:hover {
+  transform: skew(45deg, 45deg);
+}
+.ei {
+  width: 74px;
+  height: 76px;
+  border: 2px solid black;
+  transform: none;
+  position: absolute;
+  bottom: 0px;
+  right: 76px;  
+  color: red;
+  font-weight: 800;
+  text-align: center;        
+}
+.eigth {   
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  align-self: flex-end; 
+  transition: 1s linear;
+  z-index: 2; 
+  position: relative;
+  left: -78px;
+}
+.eigth:hover {       
+  transform: translateX(80px);
+  background: blue;
+}
+.nine {  
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 2px solid black;
+  transition: 1s linear;
+  position: absolute;
+  right: 0;
+}
+.nine:hover {
+  transform: skew(-45deg, 45deg);
+  border: 6px dashed white;
+}    
+.pole_dlj_anime {
+  width: 100%;
+  min-height: 100px ;
+  display: flex;
+  background-color: burlywood;
+  background-image: url(./img/room3.jpg);
+  background-size: cover;
+  margin: 100px 0;  
+  display: block;  
+}
+.pole_dlj_anime h1 {
+  color: rgb(7, 44, 53);
+  text-shadow: 2px 2px 3px white;
+}
+.golova {
+  width: 70px;
+  height: 70px; 
+  border-radius: 50%;
+  background-color: cornsilk;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto; 
+  position: relative;
+}
+.golova img {
+  width: 125px;
+  position: absolute;
+  left: -30px;
+  top: -10px;  
+  z-index: 1;
+}
+.telo_parent {
+  width: 200px;
+  height: 102px;   
+  margin: 0px auto;
+  position: relative;
+  display: flex; 
+}       
+.telo {
+  width: 0; 
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #24375B;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.foot {
+  width: 200px;
+  height: 80px; 
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.foot_left {
+  width: 5px;
+  height: 80px;
+  background-color: rgb(231, 216, 75);
+  border: 2px solid black; 
+  margin-right: 15px; 
+  margin-top: 0;  
+}
+.foot_right {
+  width: 5px;
+  height: 80px;
+  border: 2px solid black; 
+  margin-top: 0; 
+  background-color: rgb(231, 216, 75); 
+}
+.fit {
+  width: 80px;
+  height: 20px;   
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.fit_left {
+  width: 15px;
+  height: 8px;
+  background-color: rgb(230, 43, 152);
+  border: 2px solid black; 
+  margin-right: 15px; 
+  margin-top: 0;  
+}
+.fit_right {
+  width: 15px;
+  height: 8px;
+  border: 2px solid black; 
+  margin-top: 0; 
+  background-color: rgb(230, 43, 152);
+}
+.left_hand1 {
+  width: 45px;
+  height: 5px;
+  border: 2px solid black; 
+  background-color: rgb(231, 216, 75); 
+  position: absolute;
+  top: 20px;
+  left: 42px;  
+  transform-origin: 100% 0%;
+  transform: rotate(-45deg);
+  animation-name: left_h_1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  
+}
+.left_hand2 {
+  width: 45px;
+  height: 5px;
+  border: 2px solid black; 
+  background-color: rgb(231, 216, 75); 
+  position: absolute;
+  top: 51px;
+  left: 58px;
+  transform-origin: 0% 0%;
+  transform: rotate(0deg);
+  animation-name: left_h_2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+@keyframes left_h_1 {   
+  100% {   
+    transform-origin: 100% 0%;
+    transform: rotate(-50deg); 
+      }
+}
+@keyframes left_h_2 {      
+100%{
+    transform-origin: 0% 100%;        
+    transform: rotate(-360deg); 
+}    
+}
+.right_hand1 {
+  width: 45px;
+  height: 5px;
+  border: 2px solid black; 
+  background-color: rgb(231, 216, 75); 
+  position: absolute;
+  top: 20px;
+  left: 111px;  
+  transform-origin: 0% 0%;
+  transform: rotate(55deg); 
+  animation-name: right_h_1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.right_hand2 {
+  width: 45px;
+  height: 5px;
+  border: 2px solid black; 
+  background-color: rgb(231, 216, 75); 
+  position: absolute;
+  top: 55px;
+  left: 130px;
+  transform-origin: 0% 0%;
+  transform: rotate(15deg);
+  animation-name: right_h_2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+.blue_bol {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: rgb(58, 193, 235);
+  position: absolute;
+  top: 60px;
+  left: 165px;
+  animation-name: blue_bol_1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+.red_bol {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: rgb(121, 33, 11);
+  position: absolute;
+  top: 60px;
+  left: 165px;
+  animation-name: red_bol_1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+.yelloy_bol {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: rgb(218, 233, 15);
+  position: absolute;
+  top: 40px;
+  left: 92px;
+  animation-name: yelloy_bol_1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+@keyframes yelloy_bol_1 {          
+  0% {
+    top: 40px;
+    left: 92px;      
+  } 
+  16.5% {
+    top: -35px;
+    left: 90px; 
+  }
+  33% {
+    top: -115px;
+    left: 65px; 
+  }
+  50% {
+    top: -115px;
+    left: 35px;  
+  }
+  66.5% {
+    top: -35px;
+    left: 9px;   
+  } 
+  83.5% {
+    top: 45px;
+    left: 8px;
+  }
+  89% {
+    top: 85px;
+    left: 31px;
+  }
+  94.5% {
+    top: 82px;
+    left: 81px;
+  }
+  100% {
+    top: 40px;
+    left: 92px;  
+  }
+}
+.green_bol {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background:  rgb(11, 165, 11);
+  position: absolute;
+  top: -35px;
+  left: 80px;
+  animation-name: green_bol_1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+.white_bol {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: linear-gradient(to top, rgb(241, 240, 240), rgb(245, 171, 171));
+  position: absolute;
+  top: 45px;
+  left: 8px;
+  animation-name: white_bol_1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+@keyframes white_bol_1 { 
+  0% {
+    top: -115px;
+    left: 65px;  
+    }
+  16.5% {
+    top: -115px;
+    left: 35px; 
+    }
+  33% {
+    top: -35x;
+    left: 9px; 
+    }    
+  49.5% {
+    top: 45px;
+    left: 8px;  
+   }
+  55% {
+    top: 85px;
+    left: 31px;  
+   }
+  60.5% {
+    top: 82px;
+    left: 81px;  
+   }   
+  66% {
+    top: 40px;
+    left: 92px;
+  }
+  82.6% {
+    top: -35px;
+    left: 90px;
+  }
+  100% {
+    top: -115px;
+    left: 65px;  
+    }     
+}  
+@keyframes right_h_1 {   
+  100% {   
+    transform-origin: 0% 0%;
+    transform: rotate(65deg); 
+    }
+}
+  @keyframes right_h_2 {        
+  100% {
+    transform-origin: 0% 100%;        
+    transform: rotate(375deg); 
+    }    
+}
+@keyframes red_bol_1 {          
+  0% {
+    top: 60px;
+    left: 165px;      
+  } 
+  5.5% {
+    top: 82px;
+    left: 122px; 
+  }
+  11% {
+    top: 70px;
+    left: 96px; 
+  }
+  16.6% {
+    top: 38px;
+    left: 77px;  
+  }
+  33.3%{
+    top: -35px;
+    left: 90px;   
+  } 
+  50% {
+    top: -120px;
+    left: 100px;
+  }
+  66.6% {
+    top: -125px;
+    left: 135px;
+  }
+  83.3% {
+    top: -35px;
+    left: 155px;
+  }
+  100% {
+    top: 60px;
+    left: 165px;  
+  }
+}
+ @keyframes green_bol_1 {          
+  0% {
+    top: -125px;
+    left: 135px;      
+  } 
+  16.7% {
+    top: -35px;
+    left: 155px; 
+  }
+  33.3% {
+    top: 60px;
+    left: 165px; 
+   }
+  38.8% {
+    top: 82px;
+    left: 122px;  
+  }
+  44.3% {
+    top: 70px;
+    left: 96px;   
+  } 
+  49.8% {
+    top: 38px;
+    left: 77px;
+  }
+  66.3% {
+    top: -35px;
+    left: 90px;
+  }
+  83% {
+    top: -120px;
+    left: 100px;
+  }
+  100% {
+    top: -125px;
+    left: 135px;  
+  }
+}
+@keyframes blue_bol_1 {          
+  0% {
+    top: -225px;
+    left: 48px;      
+ } 
+ 5.5% {
+    top: -130px;
+    left: 15px;  
+  }
+11% {
+    top: -35px;
+    left: 9px; 
+  }
+16.4% {
+    top: 45px;
+    left: 8px;  
+  }
+21.9% {
+    top: 85px;
+    left: 31px;  
+    }
+27.4% {
+    top: 82px;
+    left: 81px; 
+ }
+32.9% {
+    top: 40px;
+    left: 92px;  
+ }
+38.4% {
+    top: -35px;
+    left: 90px;   
+} 
+43.9% {
+    top: -130px;
+    left: 95px;
+}
+49.4% {
+    top: -225px;
+    left: 120px;
+}
+55% {
+    top: -130px;
+    left: 145px;  
+}
+60.5% {
+    top: -35px;
+    left: 165px;  
+}
+66% {
+    top: 60px;
+    left: 165px;
+}
+71.5% {
+    top: 82px;
+    left: 122px;  
+}
+77% {
+    top: 70px;
+    left: 96px;  
+  }
+82.5% {
+    top: 38px;
+    left: 77px;  
+  }
+88% {
+    top: -35px;
+    left: 90px;  
+  }
+93.6% {
+    top: -130px;
+    left: 75px;  
+  }
+100% {
+    top: -225px;
+    left: 48px;  
+ }
+}
+
